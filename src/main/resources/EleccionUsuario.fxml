@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="333.0" prefWidth="210.0" style="-fx-background-color: aaaaaa;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.banco.controlador.EleccionControlador">
+    <children>
+        <Pane prefHeight="74.0" prefWidth="210.0" style="-fx-background-color: #123A30;">
+            <children>
+                <Label blendMode="SRC_ATOP" layoutX="14.0" layoutY="12.0" prefHeight="50.0" prefWidth="138.0" text="Seleccione el Usuario" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+                    <font>
+                        <Font name="Arial" size="14.0" />
+                    </font>
+                </Label>
+            <ImageView fitHeight="65.0" fitWidth="61.0" layoutX="152.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/logos.png" />
+               </image>
+            </ImageView>
+            </children>
+            <effect>
+                <ColorAdjust brightness="-0.09" contrast="0.09" />
+            </effect>
+        </Pane>
+          <Button fx:id="btnCliente" alignment="CENTER" layoutX="4.0" layoutY="109.0" mnemonicParsing="false" onAction="#irACLiente" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #90EE90; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, black, 5, 0, 2, 2);" text="Cliente" textOverrun="CLIP" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="12.800000000000011" AnchorPane.topAnchor="109.0">
+              <font>
+                  <Font name="System Bold" size="18.0" />
+              </font>
+          </Button>
+          <Button fx:id="btnCajero" layoutX="4.0" layoutY="179.0" mnemonicParsing="false" onAction="#IrACaejro" prefHeight="50.0" prefWidth="183.0" style="-fx-background-color: #90EE90; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, black, 5, 0, 2, 2);" text="Cajero" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="12.800000000000011" AnchorPane.topAnchor="179.0">
+              <font>
+                  <Font name="System Bold" size="18.0" />
+              </font>
+          </Button>
+          <Button fx:id="btnAdmin" layoutX="4.0" layoutY="258.0" mnemonicParsing="false" onAction="#IrAAdmin" prefHeight="50.0" prefWidth="183.0" style="-fx-background-color: #90EE90; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, black, 5, 0, 2, 2);" text="Administrador" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="12.800000000000011" AnchorPane.topAnchor="258.0">
+              <font>
+                  <Font name="System Bold" size="18.0" />
+              </font>
+          </Button>
+    </children>
+</AnchorPane>
